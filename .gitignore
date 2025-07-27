@@ -1,0 +1,34 @@
+cat <<EOF > .gitignore
+# 🐍 Python 기본 무시 파일
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 🧪 Jupyter Notebook 체크포인트
+.ipynb_checkpoints/
+
+# 🛠 가상환경 (uv가 생성한 .venv)
+.venv/
+
+# 🔒 환경변수 및 민감정보
+.env
+*.env
+*.log
+
+# 📦 빌드/배포 관련
+build/
+dist/
+*.egg-info/
+
+# 💻 IDE 설정
+.vscode/
+.idea/
+
+# 🍎 macOS
+.DS_Store
+
+# 💡 선택적으로 무시할 수 있는 파일
+# uv.lock    # (필요 시 주석 제거)
+EOF
+
+echo ".gitignore 생성 완료 ✅"
